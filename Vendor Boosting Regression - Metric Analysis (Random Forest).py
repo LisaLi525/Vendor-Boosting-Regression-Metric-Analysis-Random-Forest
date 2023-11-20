@@ -83,8 +83,8 @@ plt.ylabel('importance')
 plt.title('Random Forest Regressor Feature Importance')
 plt.show()
 
-**Notes:**
-1. **Database Connection:** The database connection details have been replaced with placeholders (`your_database_host`, `your_database_username`, etc.). You need to replace these with actual values.
-2. **SQL Query:** The SQL query has been simplified and placeholders (`your_table`, `your_target_column`) are used. Modify the query according to your actual database schema.
-3. **Feature Selection:** Adjust the feature selection (`x_columns`, `y_column`) based on your dataset.
-4. **Random Forest Regressor:** I've set random_state to 42 for reproducibility, and you might want to adjust the parameters of `RandomForestRegressor` based on your specific needs.
+## Notes
+## 1. Database Connection: The database connection details have been replaced with placeholders (`your_database_host`, `your_database_username`, etc.). You need to replace these with actual values.
+## 2. QL Query: The SQL query has been simplified and placeholders (`your_table`, `your_target_column`) are used. Modify the query according to your actual database schema.
+## 3. Feature Selection: Adjust the feature selection (`x_columns`, `y_column`) based on your dataset.
+## 4. Random Forest Regressor: I've set random_state to 42 for reproducibility, and you might want to adjust the parameters of `RandomForestRegressor` based on your specific needs.
