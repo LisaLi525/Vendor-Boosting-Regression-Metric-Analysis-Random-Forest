@@ -21,6 +21,38 @@ The outcome of the model is a vendor scoring system that ranks vendors based on 
 #### Applications
 This system can be particularly useful for businesses that rely on a network of vendors for their operations. It allows for a data-driven approach to vendor management, ensuring that resources are allocated efficiently and relationships with vendors are optimized for mutual success.
 
+## Prerequisites
+Before running this notebook, ensure you have the following packages installed:
+- numpy
+- pandas
+- pyodbc
+- psycopg2
+- seaborn
+- matplotlib
+- scikit-learn
+- SQLAlchemy
+- factor_analyzer
+
+These packages can be installed via pip. For example:
+```
+pip install numpy pandas pyodbc psycopg2 seaborn matplotlib scikit-learn SQLAlchemy factor_analyzer
+```
+
+## Installation
+No additional installation is required apart from the prerequisites mentioned above.
+
+## Usage
+To run the notebook, follow these steps:
+1. Ensure all prerequisites are installed.
+2. Open the notebook in your preferred Python notebook environment (e.g., Jupyter Notebook, Google Colab).
+3. Run the cells sequentially to connect to the database, preprocess the data, perform feature selection, and apply the Random Forest regression model.
+
+## Key Components
+- **Database Connection**: The notebook connects to a Redshift database using SQLAlchemy. Make sure to provide the correct credentials.
+- **Data Preprocessing**: The data is fetched and preprocessed, including encoding categorical variables and normalizing numerical variables.
+- **Feature Selection**: Features influencing GSS and new subscriptions are identified using Recursive Feature Elimination (RFE) and RandomForestRegressor.
+- **Model Training and Evaluation**: A Random Forest Regressor model is trained and evaluated on selected features to understand their importance.
+
 #### Security and Privacy Considerations
 Given the nature of the data involved, the project takes care to handle sensitive information securely. Database credentials and other sensitive details are not hardcoded but securely fetched during runtime. It's crucial for users to ensure these credentials are protected and not exposed in public or shared environments.
 
